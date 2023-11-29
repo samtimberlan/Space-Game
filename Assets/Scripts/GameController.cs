@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class GameController : MonoBehaviour
 {
@@ -10,10 +11,10 @@ public class GameController : MonoBehaviour
 	public string ScorePrefix = string.Empty;
 
 	//Score text object
-	public Text ScoreText = null;
+	public TMP_Text ScoreText = null;
 
 	//Game over text
-	public Text GameOverText = null;
+	public TMP_Text GameOverText = null;
 
 	public static GameController ThisInstance = null;
 
