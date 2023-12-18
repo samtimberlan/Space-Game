@@ -13,10 +13,8 @@ public class GameController : MonoBehaviour
 	//Score text object
 	public TMP_Text ScoreText = null;
 
-	//Game over text
-	public TMP_Text GameOverText = null;
-
 	public static GameController ThisInstance = null;
+	public GameOver GameOverScreen;
 
 	void Awake()
 	{
@@ -32,11 +30,8 @@ public class GameController : MonoBehaviour
 		}
 	}
 
-	public static void GameOver()
+	public void GameOver()
 	{
-		if (ThisInstance.GameOverText != null)
-		{
-			ThisInstance.GameOverText.gameObject.SetActive(true);
-		}
+		GameOverScreen.Setup(Score);
 	}
 }

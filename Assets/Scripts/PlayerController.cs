@@ -3,6 +3,7 @@
 public class PlayerController : MonoBehaviour
 {
 	private Rigidbody ThisBody = null;
+	public GameController GameController = null;
 
 	public bool MouseLook = true;
 	public string HorzAxis = "Horizontal";
